@@ -1,4 +1,6 @@
-dotmap==1.3.17
-aiogram==2.9.2
 keyring==21.2.1
+dotmap==1.3.17
+heidi.egg==info
+num2words==0.5.10
+aiogram==2.9.2
 heidi==1.0.18

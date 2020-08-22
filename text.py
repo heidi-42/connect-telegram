@@ -129,7 +129,7 @@ def ru_number_and_noun(nominative, genitive, plural, number):
     if number == 1:
         return nominative
 
-    number_repr, noun = str(number), None
+    number_repr, noun = str(number), plural
     if number_repr.endswith('1'):
         if number_repr.endswith('11'):
             noun = plural
@@ -141,8 +141,6 @@ def ru_number_and_noun(nominative, genitive, plural, number):
                     not number_repr.endswith('1' + suffix):
                 noun = genitive
 
-        if noun != genitive:
-            noun = plural
     return f'{num2words(number, lang="ru")} {noun}'
 
 
